@@ -9,7 +9,7 @@
 
 	<name>Font Awesome</name>
 	<artifactId>webjar-fontawesome</artifactId>
-	<version>4.7.0</version>
+	<version>4.7.0-1-SNAPSHOT</version>
 	<description>Font Awesome Library.</description>
 
 	<properties>
@@ -57,8 +57,4 @@
 			</plugin>
 		</plugins>
 	</build>
-
-  <scm>
-    <tag>4.7.0</tag>
-  </scm>
 </project>
