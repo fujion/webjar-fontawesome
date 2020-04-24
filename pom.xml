@@ -12,16 +12,6 @@
 	<version>4.7.0-1-SNAPSHOT</version>
 	<description>Font Awesome Library.</description>
 
-	<properties>
-		<systemjs>
-			{
-				"paths": {
-					"fontawesome-css": "css/font-awesome.css"
-				}
-			}			
-		</systemjs>
-	</properties>
-	
 	<build>
 		<plugins>
 			<plugin>
@@ -30,9 +20,6 @@
 				<executions>
 					<execution>
 						<id>npm-install</id>
-						<configuration>
-							<skip>false</skip>
-						</configuration>
 					</execution>
 				</executions>
 			</plugin>
