@@ -43,7 +43,7 @@
 						<configuration>
 							<target>
 								<copy todir="${webjar.target}">
-									<fileset dir="${src.rootdir}/node_modules/font-awesome" includes="css/*.*,fonts/*.*,README.md" />
+									<fileset dir="${src.rootdir}/node_modules/font-awesome" includes="css/,fonts/,README.md" />
 								</copy>
 							</target>
 						</configuration>
