@@ -9,7 +9,7 @@
 
 	<name>Font Awesome</name>
 	<artifactId>webjar-fontawesome</artifactId>
-	<version>4.7.0-1</version>
+	<version>4.7.0-2</version>
 	<description>Font Awesome Library.</description>
 
 	<build>
