@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.fujion.webjars</groupId>
 		<artifactId>fujion-webjars</artifactId>
-		<version>3.0.0</version>
+		<version>3.2.0-SNAPSHOT</version>
 	</parent>
 
 	<name>Font Awesome</name>
 	<artifactId>webjar-fontawesome</artifactId>
-	<version>4.7.0-10</version>
+	<version>4.7.0-11</version>
 	<description>Font Awesome Library.</description>
 
 	<build>
@@ -43,7 +43,10 @@
 						<configuration>
 							<target>
 								<copy todir="${webjar.target}">
-									<fileset dir="${src.rootdir}/node_modules/font-awesome" includes="css/,fonts/,README.md" />
+									<fileset dir="${src.rootdir}/node_modules/font-awesome" includes="README.md" />
+								</copy>
+								<copy todir="${webjar.target}/dist">
+									<fileset dir="${src.rootdir}/node_modules/font-awesome" includes="css/,fonts/" />
 								</copy>
 							</target>
 						</configuration>
