@@ -9,11 +9,34 @@
 
 	<name>Font Awesome</name>
 	<artifactId>webjar-fontawesome</artifactId>
-	<version>4.7.0-11</version>
+	<version>4.7.0-11-SNAPSHOT</version>
 	<description>Font Awesome Library.</description>
+
+	<properties>
+		<npm-install.skip>false</npm-install.skip>
+	</properties>
 
 	<build>
 		<plugins>
+			<plugin>
+				<groupId>org.fujion.webjars</groupId>
+				<artifactId>webjar-validator-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>validate-webjar</id>
+						<configuration>
+							<rules>
+								<rule>file_exists import-map.json</rule>
+								<rule>file_contains README.md "SIL OFL"</rule>
+								<rule>file_contains README.md "MIT License"</rule>
+								<rule>file_contains README.md "CC BY 3.0 License"</rule>
+								<rule>file_exists dist/css/font-awesome.css</rule>
+								<rule>file_exists dist/fonts/FontAwesome.otf</rule>
+							</rules>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
 			<plugin>
 				<artifactId>maven-antrun-plugin</artifactId>
 				<executions>
