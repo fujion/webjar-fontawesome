@@ -6,7 +6,7 @@
     "postinstall": "gulp"
   },
   "dependencies": {
-    "font-awesome": "${version.unrevise}"
+    "@fortawesome/fontawesome-free": "${version.unrevise}"
     },
   "devDependencies": {
     "gulp": "^4.0.0"

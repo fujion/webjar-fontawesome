@@ -9,7 +9,7 @@
 
 	<name>Font Awesome</name>
 	<artifactId>webjar-fontawesome</artifactId>
-	<version>4.7.0-11-SNAPSHOT</version>
+	<version>6.4.2-SNAPSHOT</version>
 	<description>Font Awesome Library.</description>
 
 	<build>
@@ -23,11 +23,13 @@
 						<configuration>
 							<rules>
 								<rule>file_exists import-map.json</rule>
-								<rule>file_contains README.md "SIL OFL"</rule>
-								<rule>file_contains README.md "MIT License"</rule>
-								<rule>file_contains README.md "CC BY 3.0 License"</rule>
-								<rule>file_exists dist/css/font-awesome.css</rule>
-								<rule>file_exists dist/fonts/FontAwesome.otf</rule>
+								<rule>file_contains LICENSE.txt "SIL OFL"</rule>
+								<rule>file_contains LICENSE.txt "MIT License"</rule>
+								<rule>file_contains LICENSE.txt "CC BY 4.0 License"</rule>
+								<rule>file_exists dist/css/fontawesome.css</rule>
+								<rule>file_count dist/webfonts 8</rule>
+								<rule>file_count dist/css 18</rule>
+								<rule>file_count dist/sprites 3</rule>
 							</rules>
 						</configuration>
 					</execution>

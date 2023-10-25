@@ -1,5 +1,5 @@
 {
   "imports": {
-    "fontawesome-css": "dist/css/font-awesome.css"
+    "fontawesome-css": "dist/css/all.css"
   }
 }

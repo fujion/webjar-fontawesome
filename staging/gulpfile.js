@@ -1,10 +1,10 @@
 const {src, dest, series} = require('gulp');
 
-const srcDir = '${webjar.staging}/node_modules/font-awesome/';
+const srcDir = '${webjar.staging}/node_modules/@fortawesome/fontawesome-free/';
 const destDir = '${webjar.target}/';
 
 function task1() {
-    return _copy('*.md');
+    return _copy('*.txt');
 }
 
 function task2() {
@@ -12,7 +12,15 @@ function task2() {
 }
 
 function task3() {
-    return _copy('fonts/**', 'dist/fonts');
+    return _copy('svgs/**', 'dist/svgs');
+}
+
+function task4() {
+    return _copy('webfonts/**', 'dist/webfonts');
+}
+
+function task5() {
+    return _copy('sprites/**', 'dist/sprites');
 }
 
 function _toSrc(_src) {
@@ -28,4 +36,4 @@ function _copy(_src, _dest) {
     return _toSrc(_src).pipe(_toDest(_dest))
 }
 
-exports.default = series(task1, task2, task3);
+exports.default = series(task1, task2, task3, task4, task5);
